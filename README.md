@@ -9,9 +9,9 @@ Aqui na imagem postada, pode se dar conta dos resultados incorretos em `Sharedta
 de código `"addMark"` que está localizado em `SharedTable`. O problema ocorre por que considerando que o programa está rodando de forma
 concorrente, ao colocar em table o char "c" e depois a função `"spendSomeTime"` (unicamente feita pra passar o tempo) ser acionada,
 para logo depois aumentar o index e colocar outro "c", faz com que o resultado se torne inconsistente. As varias threads entram em
-conflito nesse meio tempo que ocorre a função (principalmente culpa de `spendSomeTime`), e o resultado final então é extremamente improvável de estar correto. 
-O jeito correto de resolver esse dilema, é sincronizar a função `addMark`, não apenas o `spendSomeTime` (por mais que seja o maior mal
-da concorrência entrando em conflito). Ou ainda mais fácil, sem precisar utilizar "synchronized", é só não usar a função `spendSomeTime`,
+conflito nesse meio tempo que ocorre a função (principalmente culpa de `"spendSomeTime"`), e o resultado final então é extremamente improvável de estar correto. 
+O jeito correto de resolver esse dilema, é sincronizar a função `addMark`, não apenas o `"spendSomeTime"` (por mais que seja o maior mal
+da concorrência entrando em conflito). Ou ainda mais fácil, sem precisar utilizar "synchronized", é só não usar a função `"spendSomeTime"`,
 assim o código `"addMark"` consegue rodar em "Mão unica" sem dificuldades.
 
 ## Indo além
