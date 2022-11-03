@@ -19,7 +19,7 @@ assim o código `"addMark"` consegue rodar em "Mão unica" sem dificuldades.
 Algo que me desperta o interesse nesse conceito, é o porquê. Por que utilizar threads? o que ganhamos com isso? resposta? basicamente, muita eficiência.
 O poder e importância do multi-thread em otimização e aperfeiçoamento de códigos em mais larga escala é extremamente claro, sem sombra de duvidas é  de suma importância para a saúde do programa.
 Um jogo que utiliza um meio de mão única para seu processamento, definitivamente não estaria utilizando nem perto de seu potencial verdadeiro para atingir uma
-otimização boa e muito provavelmente teria taxa de quadros minuscula em comparação com multi-thread, tanto que mal conseguiria usar a placa de vídeo, que
+otimização boa e muito provavelmente teria uma taxa de quadros minúscula em comparação com multi-thread, tanto que mal conseguiria usar a placa de vídeo, que
 entraria em conflito com o processador e serviriam como um funil de otimização um para o outro. Venho programando tudo em mão única, mas tenho certeza
 que no mundo da programação para coisas com reais funcionalidedes, o multi-thread é a norma, pois não consigo nem imaginar um universo aonde ele não seria
 utilizado para todos os tipos de programação, seria desperdiçar uma mina de diamantes de otimização. Fico impressionado na evolução ao longo dos anos tanto
